@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+<h3>Skills as of <%= time.toLocaleString() %></h3>
+<ul>
+  <% skills.forEach(function(s) { %>
+    <li>
+      <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+    </li>
+  <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>
